@@ -1,0 +1,31 @@
+/* *{
+    margin: 0;
+    padding: 0;
+ } */
+.parentDiv{
+    margin: 0 4px;
+}
+.heading{
+    margin: 0 0 4px 0;
+}
+.parentDiv > div{
+    display: inline-block;
+}
+.labelMinPrice{
+    margin: 0 16px 0 0;
+}
+.textPrice{
+    margin: 4px 0 4px -90px;
+}
+.divLabel{
+    display: flex;
+}
+.inputPrice{
+    border-radius: 8px;
+    border-style: solid ;
+    border-width: thin;
+    height: 40px;
+}
+.message{
+    margin: 4px 0 0 0 ;
+}

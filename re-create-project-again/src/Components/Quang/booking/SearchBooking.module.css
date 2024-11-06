@@ -1,0 +1,104 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    /* background: rgb(15 30 45); */
+  }
+  
+  /* General Container Styles */
+  .container {
+    min-height: 100vh; /* Ensure container takes at least the full viewport height */
+    background: #f4f4f4; /* Background color for the main content area */
+  }
+  
+  /* Sidebar Styles */
+  .col-2 {
+    background: #1e2a38;
+    padding: 0;
+    min-height: 100vh; /* Ensure sidebar takes at least the full viewport height */
+  }
+  
+  /* Main Content Styles */
+  .col-10.vh-100 {
+    padding: 20px;
+    background: #f4f4f4; /* Match the main content background color */
+  }
+  
+  /* Search and Sort Container */
+  .searchNsort {
+    margin: 20px 0;
+  }
+  
+  /* Booking Cards */
+  .ContTourBooked {
+    padding: 20px;
+  }
+  
+  .card {
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .card-body {
+    background: #ffffff;
+    padding: 15px;
+  }
+  
+  .card-title {
+    color: #333;
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+  }
+  
+  .list-group-item {
+    background: #ffffff;
+    border: none;
+    padding: 10px 0;
+    color: #333;
+  }
+  
+  .list-group-item:first-child {
+    font-weight: bold;
+  }
+  
+  /* Button Styles */
+  .btn-secondary {
+    background: #6c757d;
+    border-color: #6c757d;
+  }
+  
+  .btn-secondary:hover {
+    background: #5a6268;
+    border-color: #545b62;
+  }
+  
+  .btn-danger {
+    background: #dc3545;
+    border-color: #dc3545;
+  }
+  
+  .btn-danger:hover {
+    background: #c82333;
+    border-color: #bd2130;
+  }
+  
+  /* Modal Styles */
+  .modal-content {
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .modal-header {
+    border-bottom: none;
+  }
+  
+  .modal-body {
+    padding: 15px;
+  }
+  

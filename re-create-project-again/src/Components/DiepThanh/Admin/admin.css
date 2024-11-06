@@ -1,0 +1,83 @@
+/* Import the font you want to use */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap'); /* Space-themed font */
+
+html, body {
+  margin: 0; /* Remove default margin */
+  padding: 0; /* Remove default padding */
+  height: 100%; /* Ensure the body takes up the full height */
+  overflow-x: hidden; /* Prevent horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling if needed */
+}
+
+.admin-background {
+  position: absolute; /* Absolute positioning to ensure full coverage */
+  top: 0; /* Align to the top of the page */
+  left: 0; /* Align to the left of the page */
+  width: 100vw; /* Cover the full width of the viewport */
+  height: 100vh; /* Ensure it covers the full viewport height */
+  background: url('https://th.bing.com/th/id/R.9da705d3ff726cfef2cce4d71b3aedb6?rik=uZAdb%2fDsupOPiA&pid=ImgRaw&r=0') no-repeat center center;
+  background-size: cover; /* Cover the entire area */
+  z-index: 1; /* Ensure it's below other elements */
+  margin-left: 250px; /* Reserve space for the sidebar */
+}
+
+.welcome-text {
+  font-family: 'Orbitron', cursive; /* Apply the space-themed font */
+  font-size: 3rem; /* Adjust font size as needed */
+  text-align: center; /* Center the text horizontally */
+  position: absolute; /* Position text at the top center */
+  top: 20px; /* Adjust distance from the top */
+  left: 43%;
+  transform: translateX(-50%); /* Center text horizontally */
+  color: #fff; /* Text color is white */
+  background: linear-gradient(45deg, rgb(22, 232, 186), rgb(11, 192, 215), rgb(225, 134, 22)); /* Blue sheen effect */
+  background-size: 200% 200%; /* Ensure the background covers more area for animation */
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; /* Make text color transparent to show gradient */
+  animation: colorChange 5s ease infinite; /* Apply moving color animation */
+  z-index: 2; /* Ensure text is above the background */
+}
+
+@keyframes colorChange {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+.admin-menu {
+  position: absolute; /* Ensure it appears over other content */
+  top: 80px; /* Adjust based on where you want the menu to appear */
+  right: 0; /* Align to the right */
+  background: #fff; /* Background color of menu */
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  z-index: 3; /* Ensure the menu is above the background */
+}
+
+.admin-menu-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.admin-menu-item:hover {
+  background-color: #f0f0f0; /* Hover effect */
+}
+
+.profile-box {
+  display: flex;
+  align-items: center;
+}
+
+.profile-box svg {
+  margin-right: 10px;
+}

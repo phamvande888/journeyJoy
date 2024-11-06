@@ -1,0 +1,93 @@
+[
+    {
+        "id": 1,
+        "tour_id": 1,
+        "so_luong_nguoi": 2,
+        "anh_tour": "https://cdn.getyourguide.com/img/tour/5bbaaf238d1f4.jpeg/145.jpg",
+        "tong_tien": 65000000,
+        "ten_tour": "Du lich song nuoc Ca Mau",
+        "trang_thai": 2,
+        "ngay_khoi_hanh": "2024-11-25",
+        "pt_thanh_toan": "VNPAY",
+        "ghi_chu": "hanh khac la nguoi gia",
+        "booking_at": "Can Tho"
+    },
+    {
+        "id": 2,
+        "tour_id": 1,
+        "so_luong_nguoi": 7,
+        "anh_tour": "https://cdn.getyourguide.com/img/tour/5bbaaf238d1f4.jpeg/145.jpg",
+        "tong_tien": 58000000,
+        "ten_tour": "Du lich song nuoc Can Tho",
+        "trang_thai": 1,
+        "ngay_khoi_hanh": "2024-09-15",
+        "pt_thanh_toan": "VNPAY",
+        "ghi_chu": "hanh khac la nguoi gia",
+        "booking_at": "Vinh Long"
+    },
+    {
+        "id": 3,
+        "tour_id": 1,
+        "so_luong_nguoi": 4,
+        "anh_tour": "https://cdn.getyourguide.com/img/tour/5bbaaf238d1f4.jpeg/145.jpg",
+        "tong_tien": 8000000,
+        "ten_tour": "Du lich song nuoc rung U Minh",
+        "trang_thai": 3,
+        "ngay_khoi_hanh": "2025-07-24",
+        "pt_thanh_toan": "VNPAY",
+        "ghi_chu": "hanh khac la nguoi gia",
+        "booking_at": "Dong Thap"
+    },
+    {
+        "id": 4,
+        "tour_id": 1,
+        "so_luong_nguoi": 5,
+        "anh_tour": "https://cdn.getyourguide.com/img/tour/5bbaaf238d1f4.jpeg/145.jpg",
+        "tong_tien": 10000000,
+        "ten_tour": "Du lich That nui An Giang",
+        "trang_thai": 4,
+        "ngay_khoi_hanh": "2022-01-23",
+        "pt_thanh_toan": "VNPAY",
+        "ghi_chu": "hanh khac la nguoi gia",
+        "booking_at": "Ho Chi Minh"
+    },
+    {
+        "id": 5,
+        "tour_id": 1,
+        "so_luong_nguoi": 8,
+        "anh_tour": "https://cdn.getyourguide.com/img/tour/5bbaaf238d1f4.jpeg/145.jpg",
+        "tong_tien": 16000000,
+        "ten_tour": "Du lich cam trai An Giang",
+        "trang_thai": 2,
+        "ngay_khoi_hanh": "2024-12-02",
+        "pt_thanh_toan": "VNPAY",
+        "ghi_chu": "hanh khac la nguoi gia",
+        "booking_at": "Ca Mau"
+    },
+    {
+        "id": 6,
+        "tour_id": 1,
+        "so_luong_nguoi": 12,
+        "anh_tour": "https://cdn.getyourguide.com/img/tour/5bbaaf238d1f4.jpeg/145.jpg",
+        "tong_tien": 80000000,
+        "ten_tour": "Du lich dong bang Dong Thap",
+        "trang_thai": 3,
+        "ngay_khoi_hanh": "2024-08-24",
+        "pt_thanh_toan": "VNPAY",
+        "ghi_chu": "hanh khac la nguoi gia",
+        "booking_at": "Ho Chi Minh"
+    },
+    {
+        "id": 7,
+        "tour_id": 1,
+        "so_luong_nguoi": 20,
+        "anh_tour": "https://cdn.getyourguide.com/img/tour/5bbaaf238d1f4.jpeg/145.jpg",
+        "tong_tien": 60000000,
+        "ten_tour": "Du lich vuon cay an trai Hau Giang",
+        "trang_thai": 2,
+        "ngay_khoi_hanh": "2024-07-20",
+        "pt_thanh_toan": "VNPAY",
+        "ghi_chu": "hanh khac la nguoi gia",
+        "booking_at": "Ho Chi Minh"
+    }
+]

@@ -1,0 +1,51 @@
+[
+    
+    {
+     "tour_id": "TOUR9876",
+     "tour_time": "TOUR9876",
+     "tour_name": "Amazing Safari Adventure",
+     "destination": "<strong>Kenya</strong>",
+     "start_date": "2024-07-15",
+     "end_date": "2024-07-25",
+     "price_per_person": 5500,
+     "number_of_people": 8
+   },
+    {
+     "tour_id": "TOUR9876",
+     "tour_name": "Amazing Safari ",
+     "destination": "Kenya",
+     "start_date": "2024-07-15",
+     "end_date": "2024-07-25",
+     "price_per_person": 2500,
+     "number_of_people": 10
+   },
+    {
+     "tour_id": "TOUR9876",
+     "tour_name": " Safari Adventure",
+     "destination": "Kenya",
+     "start_date": "2024-07-15",
+     "end_date": "2024-07-25",
+     "price_per_person": 8500,
+     "number_of_people": 8
+   },
+    {
+     "tour_id": "TOUR9876",
+     "tour_name": "Amazing  Adventure",
+     "destination": "Kenya",
+     "start_date": "2024-07-15",
+     "end_date": "2024-07-25",
+     "price_per_person": 3500,
+     "number_of_people": 12
+   },
+    {
+     "tour_id": "TOUR9876",
+     "tour_name": "Amazing ",
+     "destination": "Kenya",
+     "start_date": "2024-07-15",
+     "end_date": "2024-07-25",
+     "price_per_person": 2500,
+     "number_of_people": 18
+   }
+   
+]
+ 

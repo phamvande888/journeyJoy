@@ -1,0 +1,57 @@
+.paymentResult__root {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 9% 35%;
+    height: 737px;
+    min-height: 737px;
+  
+  .payment-result-container {
+    padding: 3%;
+    background-color: rgb(225, 234, 229);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid black;
+    border-radius: 20px;
+  }
+  
+  .success-message-a {
+    font-size: 2.3rem;
+    color: rgb(13, 133, 13);
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  i {
+    padding-right: 10px;
+  }
+  
+  .error-message-a {
+    font-size: 2rem;
+    color: red;
+    margin-bottom: 20px;
+  }
+  
+  .twobtn {
+    display: flex;
+    justify-content: space-between;
+    width: 100%; /* Ensure that buttons take full container width */
+  }
+  
+  .twobtn--a {
+    margin: 0 10px; /* Add margin to create space between buttons */
+  }
+  
+  button {
+    border-radius: 7px;
+    background-color: rgb(77, 74, 74);
+    color: white;
+    padding: 10px 20px; /* Add padding for better appearance */
+  }
+  
+  button:active {
+    scale: 0.95;
+  }
+}
+  

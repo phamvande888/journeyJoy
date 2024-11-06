@@ -1,0 +1,103 @@
+.userBiggestDiv {
+  padding: 20px;
+}
+
+.header {
+  background-color: #3c4b64;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+  position: sticky;
+  top: 0; /* Keep the header fixed at the top */
+  z-index: 2; /* Ensure the header is above other content */
+}
+
+.pWarp {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #dee2e6;
+  padding: 10px 0;
+  transition: background-color 0.3s;
+}
+
+.pWarp:hover {
+  background-color: #e9ecef;
+}
+
+.p {
+  margin: 0;
+  padding: 5px 0;
+}
+
+.divWrap {
+  width: 100%;
+  max-height: 80vh; /* Adjust height to fit within viewport */
+  overflow-y: auto; /* Allow vertical scrolling */
+  margin-top: 20px;
+}
+
+.sortBooking {
+  height: 38px;
+  border: 1px solid #ced4da;
+  border-radius: 4px;
+  padding: 0 10px;
+  font-size: 1rem;
+}
+
+.searchBar {
+  margin-right: 10px;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+/* Styling for action buttons */
+.btn {
+  font-size: 0.9rem;
+  margin: 0 4px;
+  padding: 6px 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-outline-info {
+  color: #17a2b8;
+  border: 1px solid #17a2b8;
+  background-color: transparent;
+}
+
+.btn-outline-info:hover {
+  background-color: #17a2b8;
+  color: white;
+}
+
+.btn-outline-danger {
+  color: #dc3545;
+  border: 1px solid #dc3545;
+  background-color: transparent;
+}
+
+.btn-outline-danger:hover {
+  background-color: #dc3545;
+  color: white;
+}
+
+.btn-outline-secondary {
+  color: #6c757d;
+  border: 1px solid #6c757d;
+  background-color: transparent;
+}
+
+.btn-outline-secondary:hover {
+  background-color: #6c757d;
+  color: white;
+}
+
+.table-content {
+  background-color: white;
+  color: black;
+  border-radius: 0 0 10px 10px;
+  padding: 20px;
+}

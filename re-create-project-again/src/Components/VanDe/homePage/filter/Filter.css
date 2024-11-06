@@ -1,0 +1,109 @@
+.filter__root {
+    position: relative;
+  display: flex;
+  /* justify-content: space-between; */
+  padding-left: 12%;
+  padding-right: 11.5%;
+  padding-top: 1%;
+
+  .threeft {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding-left: 30px;
+  }
+  
+  .select__tours select{
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+  }
+  
+  .ft__price select,
+  .ft__time input,
+  .fl_destination input {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 6px;
+    border: 1px solid;
+  }
+
+  .ft__time input,
+  .fl_destination input {
+    min-width: 210px;
+  }
+  
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 6px;
+    border: 1px solid;
+    font-weight: 400;
+    min-width: 110px;
+
+  }
+  button:hover{
+    background-color: rgb(218, 218, 218);
+    box-shadow: 1px 1px 2px black;
+    font-weight: 600;
+  }
+
+  button:active{
+    scale: 0.97;
+  }
+  
+  select,option {
+    cursor: pointer;
+    
+  }
+  option {
+    border: none;
+    outline: none;
+  }
+
+  .ft__price {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(218, 218, 218);
+    padding: 20px 20px;
+    display: flex;
+    position: absolute;
+    left: 21.2%;
+    bottom: -150%;
+    z-index: 999;
+    gap: 10px;
+  }
+  .btn_filter{
+    background-color: rgb(214, 213, 213);
+  }
+
+  .ft__time {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(218, 218, 218);
+    padding: 20px 20px;
+    display: flex;
+    position: absolute;
+    left: 29%;
+    bottom: -150%;
+    z-index: 999;
+    gap: 10px;
+  }
+
+  .fl_destination-a {
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: rgb(218, 218, 218);
+    padding: 20px 20px;
+    display: flex;
+    position: absolute;
+    left: 37%;
+    bottom: -150%;
+    z-index: 999;
+    gap: 10px;
+  }
+  
+ 
+}
+  

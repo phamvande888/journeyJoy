@@ -1,0 +1,15 @@
+.language-switcher {
+    display: flex;
+    align-items: center;
+  }
+
+.language-switcher .flag-icon {
+    display: inline-block;
+    margin: 0 4px; 
+    padding: 0;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+  }
+  

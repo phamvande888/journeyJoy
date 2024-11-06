@@ -1,0 +1,135 @@
+/* Importing the Roboto, Open Sans, and Seaweed Script fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Seaweed+Script&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('https://4kwallpapers.com/images/wallpapers/tropical-beach-1920x1200-14811.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.login-background {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.login-content {
+  text-align: center;
+}
+
+.login-header {
+  margin-bottom: 20px;
+}
+
+.login-header .logo {
+  font-family: 'Seaweed Script', cursive;
+  font-size: 3rem; /* Adjusted font size */
+  margin-bottom: 20px; /* Move the text a bit higher */
+  background: linear-gradient(45deg, #ff6f61, #ffa07a, #ffd700, #20b2aa, #1e90ff, #6a5acd);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-fill-color: transparent;
+  animation: gradient 5s infinite;
+}
+
+.login-header h1 {
+  font-family: 'Montserrat', sans-serif; /* Changed font */
+  font-size: 1.5rem;
+  color: white;
+  margin: 0;
+}
+
+.login-header p {
+  font-family: 'Roboto', sans-serif; /* Changed font */
+  font-size: 0.9rem;
+  color: white;
+  margin: 5px 0 20px;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.login-input {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box; /* Ensure padding is included in the width */
+}
+
+.login-input::placeholder {
+  color: lightgray;
+}
+
+.login-button {
+  width: 100%;
+  max-width: 300px;
+  padding: 10px;
+  border: none;
+  border-radius: 25px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 30px; /* Keeps the login button lower */
+}
+
+.login-button:hover {
+  background-color: #0056b3;
+}
+
+/* Keyframes for gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.password-field {
+  position: relative;
+  width: 100%;
+  max-width: 300px;
+}
+
+.password-field .login-input {
+  padding-right: 50px; /* Add padding on the right to make space for the eye icon */
+  width: 100%; /* Ensure it takes full width of its container */
+}
+
+.password-toggle {
+  position: absolute;
+  right: 15px; /* Position the icon inside the field */
+  top: 40%;
+  transform: translateY(-50%); /* Center the icon vertically */
+  cursor: pointer;
+  color: white; /* Adjust color as needed */
+  font-size: 1.2rem; /* Adjust size as needed */
+  z-index: 1; /* Ensure icon is on top */
+}

@@ -1,0 +1,80 @@
+[
+    {
+        "id": 1,
+        "dia_chi": "Tan Luoc Binh Tan Vinh Long",
+        "email": "qn69962@gmail.com",
+        "gioi_tinh": "Nam",
+        "ho_ten": "Nguyen",
+        "password": "********",
+        "role": "customer",
+        "sdt": "0787804197",
+        "username": "boydibo123",
+        "otp": "029345",
+        "otp_expiry_date": "25/02/2025"
+    },
+    {
+        "id": 2,
+        "dia_chi": "Tan Luoc Binh Tan Vinh Long",
+        "email": "qn69962@gmail.com",
+        "gioi_tinh": "Nam",
+        "ho_ten": "Quoc",
+        "password": "********",
+        "role": "customer",
+        "sdt": "0787804197",
+        "username": "boydibo123",
+        "otp": "029345",
+        "otp_expiry_date": "25/02/2025"
+    },
+    {
+        "id": 3,
+        "dia_chi": "Tan Luoc Binh Tan Vinh Long",
+        "email": "qn69962@gmail.com",
+        "gioi_tinh": "Nam",
+        "ho_ten": "Quang",
+        "password": "********",
+        "role": "customer",
+        "sdt": "0787804197",
+        "username": "boydibo123",
+        "otp": "029345",
+        "otp_expiry_date": "25/02/2025"
+    },
+    {
+        "id": 4,
+        "dia_chi": "Tan Luoc Binh Tan Vinh Long",
+        "email": "qn69962@gmail.com",
+        "gioi_tinh": "Nam",
+        "ho_ten": "Quoc Quang",
+        "password": "********",
+        "role": "customer",
+        "sdt": "0787804197",
+        "username": "boydibo123",
+        "otp": "029345",
+        "otp_expiry_date": "25/02/2025"
+    },
+    {
+        "id": 5,
+        "dia_chi": "Tan Luoc Binh Tan Vinh Long",
+        "email": "qn69962@gmail.com",
+        "gioi_tinh": "Nam",
+        "ho_ten": "Nguyen Quang",
+        "password": "********",
+        "role": "customer",
+        "sdt": "0787804197",
+        "username": "boydibo123",
+        "otp": "029345",
+        "otp_expiry_date": "25/02/2025"
+    },
+    {
+        "id": 6,
+        "dia_chi": "Tan Luoc Binh Tan Vinh Long",
+        "email": "qn69962@gmail.com",
+        "gioi_tinh": "Nam",
+        "ho_ten": "Nguyen Quoc",
+        "password": "********",
+        "role": "customer",
+        "sdt": "0787804197",
+        "username": "boydibo123",
+        "otp": "029345",
+        "otp_expiry_date": "25/02/2025"
+    }
+]

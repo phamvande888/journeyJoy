@@ -1,0 +1,332 @@
+/* Importing the Roboto, Open Sans, and Seaweed Script fonts */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&family=Seaweed+Script&display=swap');
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(to bottom, #182430, #2e6a9b); /* Gradient background */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Align items to the start (left) */
+  padding-top: 20px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: width 0.3s, box-shadow 0.3s; /* Transition for width and box-shadow */
+  box-shadow: 4px 0 10px rgba(0, 0, 0, 0.5); /* Shadow effect */
+  overflow: hidden; /* Ensure text stays within the sidebar */
+}
+
+.sidebar-container.collapsed .sidebar {
+  width: 80px; /* Adjust based on your design */
+}
+
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  overflow: hidden; /* Ensure text stays within the sidebar */
+}
+
+.sidebar-logo h1 {
+  font-family: 'Seaweed Script', cursive;
+  font-size: 40px;
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #ff6f61, #ffa07a, #ffd700, #20b2aa, #1e90ff, #6a5acd);
+  background-size: 400% 400%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text; /* For non-webkit browsers */
+  text-fill-color: transparent; /* For non-webkit browsers */
+  animation: gradient 5s infinite, move-logo 15s linear infinite; /* Adjusted durations */
+  border: none; /* No border */
+  text-decoration: none; /* No underline */
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes move-logo {
+  0% {
+    transform: translateX(100%); /* Start from outside the right */
+    opacity: 1;
+  }
+  80% {
+    transform: translateX(-50%); /* Move to the middle */
+    opacity: 0.6; /* Slightly faded */
+  }
+  100% {
+    transform: translateX(-100%); /* Move to outside the left */
+    opacity: 0;
+  }
+}
+
+.sidebar-content {
+  width: 100%;
+  padding: 0 20px;
+  flex: 1; /* Allow content to take up available space */
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar-content.collapsed {
+  display: none; /* Hide content when collapsed */
+}
+
+.sidebar-section {
+  width: 100%;
+  padding: 0 20px;
+}
+
+.sidebar-section h2 {
+  font-size: 14px;
+  color: #ccc;
+  margin-bottom: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+.sidebar-settings-section {
+  margin-top: 20px; /* Move settings section lower */
+}
+
+.sidebar-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar-section ul li {
+  display: flex;
+  align-items: center;
+  padding: 10px 15px; /* Adjust padding */
+  font-size: 14.1px;
+  transition: all 0.3s; /* Smooth transition */
+  cursor: pointer; /* Pointer cursor */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Shadow effect */
+  margin-bottom: 12px;
+}
+
+.sidebar-section ul li a {
+  text-decoration: none;
+  color: inherit;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.sidebar-section ul li:hover {
+  background-color: #2e3d4e; /* Background color on hover */
+  color: #ff6f61; /* Text color on hover */
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.75); /* Orange glow effect */
+}
+
+.sidebar-section ul li:hover a {
+  background-color: #2e3d4e; /* Background color on hover */
+  color: #ff6f61; /* Text color on hover */
+}
+
+.sidebar-section ul li i {
+  margin-right: 6px; /* Increase margin to indent icons */
+  font-size: 14px; /* Adjust icon size */
+}
+
+.icon-trends::before {
+  content: "\f201";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.icon-collection::before {
+  content: "\f0c2";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.icon-comments::before {
+  content: "\f086";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.icon-appearance::before {
+  content: "\f044";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.icon-settings::before {
+  content: "\f013";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.icon-options::before {
+  content: "\f085";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.icon-charts::before {
+  content: "\f080";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.icon-trends, .icon-collection, .icon-comments {
+  cursor: pointer;
+}
+
+.icon-trends:hover, .icon-collection:hover, .icon-comments:hover {
+  box-shadow: 0 0 10px rgba(255, 165, 0, 0.75); /* Orange glow */
+}
+
+.sidebar-toggle {
+  margin-top: auto;
+  padding: 10px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: #182532;
+  cursor: pointer;
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Shadow effect for toggle button */
+}
+
+.collapse-icon {
+  font-size: 20px;
+  color: #fff;
+  transition: transform 0.3s;
+}
+
+.collapse-icon:hover {
+  color: #ff6f61;
+  transform: scale(1.1); /* Slightly scale up on hover */
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.toggle-switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.switch {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 20px;
+}
+
+.switch:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .switch {
+  background-color: #ff6f61;
+}
+
+input:checked + .switch:before {
+  transform: translateX(14px);
+}
+
+body.dark-mode {
+  background-color: #121212;
+  color: white;
+}
+
+/* Move logout button to the bottom */
+.sidebar-content .logout-container {
+  margin-top: auto; /* Ensure the logout container is pushed to the bottom */
+  margin-bottom: 0; /* Remove bottom margin for alignment */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Adjust this value to move the logout button up from the very bottom */
+}
+
+.sidebar-content .logout-container .sidebar-item {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s, box-shadow 0.3s; /* Added box-shadow transition */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-content .logout-container .sidebar-item:hover {
+  background-color: #2e3d4e; /* Background color on hover */
+  color: #ff6f61; /* Text color on hover */
+  box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.3); /* Enhanced shadow effect on hover */
+}
+
+.sidebar-container.collapsed .sidebar-logo,
+.sidebar-container.collapsed .sidebar-section h2,
+.sidebar-container.collapsed .sidebar-section .sidebar-text {
+  display: none;
+}
+
+.sidebar-container.collapsed .sidebar-toggle .collapse-icon {
+  transform: rotate(90deg); /* Rotate the collapse icon when collapsed */
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 5px;
+  border-bottom: 1px solid #ccc;
+}
+
+.contact-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.contact-details p {
+  margin: 0;
+  font-size: 14px;
+}

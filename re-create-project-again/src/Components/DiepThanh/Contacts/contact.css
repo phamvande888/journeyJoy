@@ -1,0 +1,142 @@
+/* Import Montserrat font */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
+.contact-list-container {
+  position: relative;
+  min-height: 100vh;
+  background: url('https://wallpapers.com/images/hd/thick-clouds-in-a-futuristic-city-ketlpajwjhs7ky2h.jpg') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.home-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: linear-gradient(70deg, #2c96b3, #22b3ac, #1fba2e); 
+    background-size: 200% 200%;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffffff;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    overflow: hidden; /* Ensures sheen stays within button */
+    position: relative;
+    z-index: 1;
+    transition: all 0.3s ease;
+    animation: gradientShift 5s linear infinite;
+}
+
+.home-button::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  transform: rotate(-30deg);
+  transition: all 0.5s ease;
+}
+
+.home-button:hover {
+  background: linear-gradient(45deg, #ff6f61, #ffcc00, #ff0000, #ff00ff);
+  background-size: 400% 400%;
+  animation: gradientShift 5s ease infinite, buttonHover 0.3s ease;
+  transform: scale(1.1);
+}
+
+@keyframes gradientShift {
+  0% {
+    background-position: 0% 0%;
+  }
+  50% {
+    background-position: 100% 100%;
+  }
+  100% {
+    background-position: 0% 0%;
+  }
+}
+
+@keyframes buttonHover {
+  0% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+  50% {
+    box-shadow: 0 6px 18px rgba(255, 255, 255, 0.6);
+  }
+  100% {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  }
+}
+
+@keyframes sheen {
+  0% {
+    transform: translateX(-100%) rotate(-30deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(-30deg);
+  }
+}
+
+@keyframes sheenHover {
+  0% {
+    transform: translateX(-100%) rotate(-30deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(-30deg);
+  }
+}
+
+.contact-list {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 10px;
+  font-family: 'Montserrat', sans-serif;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  animation: float 3s ease-in-out infinite;
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.contact-table th, .contact-table td {
+  padding: 10px;
+  border: 1px solid #ddd;
+  text-align: left;
+}
+
+.contact-table th {
+  background-color: #f4f4f4;
+}
+
+.contact-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.contact-list h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.contact-table td {
+  color: #000000;
+}
+
+/* Animation for floating effect */
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
