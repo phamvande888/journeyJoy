@@ -1,1 +1,1 @@
-export const URL_SERVER = " https://curiously-warm-swan.ngrok-free.app";
+export const URL_SERVER = "https://seagull-assured-skunk.ngrok-free.app";

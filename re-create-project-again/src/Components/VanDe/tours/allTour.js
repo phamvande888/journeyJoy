@@ -133,13 +133,25 @@ const AllTour = ({ user }) => {
         <div className="body__alltours--col">
           {currentTours.map((tour) => (
             <div className="card" key={tour.id}>
-              <img
+              {/* <img
                 className="card__background"
                 src={`${url}/public/img/${tour.anh_tour}`}
                 alt={tour.nameTour}
                 width="1920"
                 height="2193"
+              /> */}
+              <img
+                className="card__background"
+                src={
+                  tour.anh_tour && !tour.anh_tour.endsWith("/null")
+                    ? `${URL_SERVER}/public/img/${tour.anh_tour}`
+                    : "https://cuocsongdungnghia.com/wp-content/uploads/2018/05/loi-hinh-anh.jpg"
+                }
+                alt={tour.nameTour}
+                width="1920"
+                height="2193"
               />
+
               <div className="card__content | flow">
                 <div className="card__content--container | flow">
                   <h2 className="card__title">

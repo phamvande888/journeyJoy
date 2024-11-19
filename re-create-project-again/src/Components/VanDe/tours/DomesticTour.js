@@ -59,7 +59,7 @@ const Domestic = ({ user }) => {
 
         const data = await response.json();
         setTours(data);
-        console.log(tours);
+        // console.log(tours);
       } catch (error) {
         console.error("Error fetching tours:", error);
       }
@@ -157,9 +157,20 @@ const Domestic = ({ user }) => {
                   </div>
                 </div>
               </div>
-              <img
+              {/* <img
                 className="card__background"
                 src={`${url}/public/img/${tour.anh_tour}`}
+                alt={tour.nameTour}
+                width="1920"
+                height="2193"
+              /> */}
+              <img
+                className="card__background"
+                src={
+                  tour.anh_tour && !tour.anh_tour.endsWith("/null")
+                    ? `${URL_SERVER}/public/img/${tour.anh_tour}`
+                    : "https://cuocsongdungnghia.com/wp-content/uploads/2018/05/loi-hinh-anh.jpg"
+                }
                 alt={tour.nameTour}
                 width="1920"
                 height="2193"

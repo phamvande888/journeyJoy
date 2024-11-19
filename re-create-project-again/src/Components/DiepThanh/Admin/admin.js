@@ -8,10 +8,10 @@ const Admin = () => {
 
   useEffect(() => {
     // Add class to body when Admin component is mounted
-    document.body.classList.add('no-scroll');
+    document.body.classList.add("no-scroll");
     // Remove class from body when Admin component is unmounted
     return () => {
-      document.body.classList.remove('no-scroll');
+      document.body.classList.remove("no-scroll");
     };
   }, []);
 
@@ -26,7 +26,7 @@ const Admin = () => {
 
   return (
     <div className="admin-background">
-      <div className="welcome-text">Welcome Admin</div>
+      <div className="welcome-text">Welcome to manager page</div>
       {isOpen && (
         <div className="admin-menu">
           <div className="admin-menu-item" onClick={openProfile}>
